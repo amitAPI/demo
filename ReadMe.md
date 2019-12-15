@@ -126,10 +126,32 @@ Resetting
 ************************GitHub**************************
 git remote -v (If this cmd outputs empty it means we do not hav any remote set)
 
-gi remote add <alias if you want> https://<url of remote repo>
+git remote add <alias if you want> https://<url of remote repo>
+
+git push -u origin master --tags
 
 
+SSH AUthentication
+-------------------
+  why ?
+   Saves time
    
+Difference between SSH and Https authentication ?
+
+1. In https you are prompted each time in anyactivity with remote.
+
+Setup SSH on Github
+--------------------
+1. create SSH key on loacl system.
+    -->
+    mkdir .ssh
+    cd .ssh
+    ssh-keygen -t -rsa -C "amit.amitkumar2@gmail.com"
+	follow the guidelines.
+	--
+	For confirming all done correctly
+	ssh -T git@github.com
+    	
    
 
 
